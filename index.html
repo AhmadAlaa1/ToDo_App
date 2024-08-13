@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo | App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Shippori+Antique&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container"> <!-- Container that contain all elements -->
+
+        <!-- Filter that contains the popup-window elements -->
+        <div class="filter">
+            <div class="popup-window">
+                <p>Empty input !</p>
+                <p>Please Enter A Valid Value</p>
+                <button id="close-window-button">Understood</button>
+            </div>  
+        </div>
+         
+        <!-- nav bar that contains the logo and the dark-theme-button -->
+        <div class="nav-bar">
+            <h1 class="logo">ToDo List</h1>
+            <img class="moon" src="https://cdn-icons-png.flaticon.com/128/15742/15742989.png" alt="">
+        </div>
+
+        <!-- Parent Container that used for position the child-container -->
+        <div class="parent-container">
+            <!-- child-container that used for contians all inputs and the tasks that will be added by the user -->
+            <div class="child-container">
+                <!-- User-input section -->
+                <div class="input-section">
+                    <label for="todo-input" id="child-container-label">What do You Want To do Today <span>?</span></label>
+                    <!-- div for positioning purpose -->
+                    <div style="display: flex;">
+                        <input type="text" name="todo-input" class="todo-input" id="todo-input">
+                        <button class="add-button" id="add-button">Add</button>
+                    </div>
+                </div>
+                <!-- empty unorderd-list element that will contains the user tasks the will be added  -->
+                <ul id="tasks"></ul>
+            </div>
+    </div> 
+</div>
+</body>
+</html>
