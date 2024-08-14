@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo | App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="light-theme.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
         <!-- nav bar that contains the logo and the dark-theme-button -->
         <div class="nav-bar">
             <h1 class="logo">ToDo List</h1>
-            <img class="moon" src="https://cdn-icons-png.flaticon.com/128/15742/15742989.png" alt="">
+            <img id="dark-theme-button" class="moon" src="https://cdn-icons-png.flaticon.com/128/15742/15742989.png" alt="">
         </div>
 
         <!-- Parent Container that used for position the child-container -->
@@ -43,7 +43,7 @@
                     <label for="todo-input" id="child-container-label">What do You Want To do Today <span>?</span></label>
                     <!-- div for positioning purpose -->
                     <div style="display: flex;">
-                        <input type="text" name="todo-input" class="todo-input" id="todo-input">
+                        <input type="text" name="todo-input" class="todo-input" id="todo-input" maxlength="70">
                         <button class="add-button" id="add-button">Add</button>
                     </div>
                 </div>

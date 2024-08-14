@@ -8,6 +8,7 @@ let child_container_label = document.querySelector("#child-container-label");
 let filter = document.querySelector(".filter");
 let popupWindow = document.querySelector(".popup-window");
 let popupWindow_close_button = document.querySelector("#close-window-button");
+let dark_theme_button = document.querySelector("#dark-theme-button");
 // ================================================================================
 
 
@@ -51,21 +52,21 @@ addbutton.onclick = function (){
 
         let list_button = document.createElement("button"); // Remove button if You Wanted To remove any Task
         list_button.className = "remove-button";
-        list_button.textContent = "x";
+        list_button.textContent = "+";
         
         
         let buttons_div_parent=document.createElement("div"); // <div> that contains checkbox and button elements for positioning purpose
         buttons_div_parent.appendChild(checkbox);
         buttons_div_parent.appendChild(list_button);
-        
+        buttons_div_parent.style.cssText = "display:flex;"
+
         let list_paragraph = document.createElement("p"); // <p> element to contain the input value
         list_paragraph.textContent = input.value;
         
         list_element.appendChild(list_paragraph);
         list_element.appendChild(buttons_div_parent);
-        
         list_parent.appendChild(list_element);
-        
+
         input.value = ""; //To reset the Input Value To Empty
         
         list_button.onclick = function () { // Remove Task Function
@@ -99,3 +100,19 @@ list_parent.addEventListener("click",function(event){
     }
 })
 // ==================== Function To set the Pointer Events none When User click on the check box ==================== //
+
+// ==================== Function To Switch Between Light and Dark Theme ==================== //
+
+
+
+dark_theme_button.onclick = function(){
+    const theme = document.getElementsByTagName("link")[0];
+    if(theme.getAttribute("href") == "light-theme.css"){
+        theme.setAttribute("href","dark-theme.css");
+    }else{
+        theme.setAttribute("href","light-theme.css");    
+    }
+}
+
+
+// ==================== Function To Switch Between Light and Dark Theme ==================== //
