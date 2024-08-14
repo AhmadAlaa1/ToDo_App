@@ -3,7 +3,6 @@ let input = document.querySelector("#todo-input");
 let addbutton = document.querySelector("#add-button");
 let removebutton = document.querySelector("remove-button");
 let list_parent = document.querySelector("#tasks");
-let child_container = document.querySelector(".child-container");
 let child_container_label = document.querySelector("#child-container-label");
 let filter = document.querySelector(".filter");
 let popupWindow = document.querySelector(".popup-window");
@@ -11,8 +10,17 @@ let popupWindow_close_button = document.querySelector("#close-window-button");
 let dark_theme_button = document.querySelector("#dark-theme-button");
 // ================================================================================
 
+document.addEventListener("keypress",function(e){ // Add Function that make the user insert into the input box directly when press "i" button
+    if(e.key == "i"){
+        input.focus();
+    }
+})
+
+// ================================================================================
+
 
 // ==================== Pop Up Window Functions ==================== //
+
 function showpopupWindow(){
     filter.classList.add("show-window");
 }
@@ -22,7 +30,6 @@ popupWindow_close_button.onclick = function(){
 }
 
 // ==================== Pop Up Window Functions ==================== //
-
 
 
 // ==================== Accept The Input By Press Enter Key ==================== //
@@ -37,6 +44,8 @@ function PressEnter(event){
 
 
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
+
+
 addbutton.onclick = function (){
     
     if(!input.value.trim()){
@@ -66,7 +75,6 @@ addbutton.onclick = function (){
         list_element.appendChild(list_paragraph);
         list_element.appendChild(buttons_div_parent);
         list_parent.appendChild(list_element);
-
         input.value = ""; //To reset the Input Value To Empty
         
         list_button.onclick = function () { // Remove Task Function
@@ -75,14 +83,12 @@ addbutton.onclick = function (){
     }
 };
 
-
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
 
 
 // ==================== The Label Animation Function ==================== //
 input.onfocus = function() {
-    child_container_label.classList.add("movefromTop-to-Bottom");
-    
+    child_container_label.classList.add("movefromTop-to-Bottom");  
 }
 input.onblur = function() {
     child_container_label.classList.remove("movefromTop-to-Bottom");
@@ -90,6 +96,7 @@ input.onblur = function() {
 // ==================== The Label Animation Function ==================== //
 
 // ==================== Function To set the Pointer Events none When User click on the check box ==================== //
+
 list_parent.addEventListener("click",function(event){
     if(event.target.classList.contains("checkbox")){
         const checkbox = event.target;
@@ -98,21 +105,29 @@ list_parent.addEventListener("click",function(event){
         }
         
     }
-})
+});
+
 // ==================== Function To set the Pointer Events none When User click on the check box ==================== //
 
+
 // ==================== Function To Switch Between Light and Dark Theme ==================== //
-
-
+let darkmode = window.localStorage.getItem("darkmode"); // To save the theme after you refresh or close the Tab of the browser
+const theme = document.getElementsByTagName("link")[0];
 
 dark_theme_button.onclick = function(){
-    const theme = document.getElementsByTagName("link")[0];
-    if(theme.getAttribute("href") == "light-theme.css"){
-        theme.setAttribute("href","dark-theme.css");
+    if(theme.getAttribute("href") == "./themes/default-light-theme.css"){
+        theme.setAttribute("href","./themes/default-dark-theme.css");
+        window.localStorage.setItem("darkmode","active");
     }else{
-        theme.setAttribute("href","light-theme.css");    
+        window.localStorage.setItem("darkmode","notactive");
+        theme.setAttribute("href","./themes/default-light-theme.css");    
     }
 }
 
+if(darkmode == "active"){
+    theme.setAttribute("href","./themes/default-dark-theme.css");
+}else{
+    theme.setAttribute("href","./themes/default-light-theme.css");    
+}
 
 // ==================== Function To Switch Between Light and Dark Theme ==================== //
