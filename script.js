@@ -16,8 +16,13 @@ document.addEventListener("keypress",function(e){ // Add Function that make the 
     }
 })
 
-// ================================================================================
+document.addEventListener("keydown",function(e){
+    if(e.ctrlKey){
+        input.blur();
+    }
+})
 
+// ================================================================================
 
 // ==================== Pop Up Window Functions ==================== //
 

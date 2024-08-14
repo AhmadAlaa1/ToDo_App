@@ -206,7 +206,7 @@ html{
 }
 
 .checkbox{
-    accent-color: green;
+    accent-color: var(--color-3);
 }
 
 .checkbox-pointer-none{
@@ -311,3 +311,16 @@ html{
     margin-top: 2rem;
 }
 /* popup-window-css */
+
+@media (max-width:674px) {
+    .input-section label{
+        top:-12rem;
+        width: 25rem;
+    }
+    .child-container{
+        width: 60%;
+    }
+    ::placeholder{
+        color: transparent;
+    }
+}
