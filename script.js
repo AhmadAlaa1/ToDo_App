@@ -11,7 +11,7 @@ let dark_theme_button = document.querySelector("#dark-theme-button");
 // ================================================================================
 
 document.addEventListener("keypress",function(e){ // Add Function that make the user insert into the input box directly when press "i" button
-    if(e.key == "i"){
+    if(e.key == "i" || e.key == "I" ){
         input.focus();
     }
 })
