@@ -8,6 +8,12 @@ let filter = document.querySelector(".filter");
 let popupWindow = document.querySelector(".popup-window");
 let popupWindow_close_button = document.querySelector("#close-window-button");
 let dark_theme_button = document.querySelector("#dark-theme-button");
+let theme_menu = document.querySelector("#theme-menu");
+let light_theme = document.querySelector("#light-theme");
+let dark_theme = document.querySelector("#dark-theme");
+let purple_light = document.querySelector("#purple-light");
+let purple_dark = document.querySelector("#purple-dark");
+const theme = document.getElementsByTagName("link")[0];
 // ================================================================================
 
 document.addEventListener("keypress",function(e){ // Add Function that make the user insert into the input box directly when press "i" button
@@ -17,12 +23,50 @@ document.addEventListener("keypress",function(e){ // Add Function that make the 
 })
 
 document.addEventListener("keydown",function(e){
-    if(e.ctrlKey){
+    if(e.key =="Escape"){
         input.blur();
     }
 })
 
 // ================================================================================
+let thememode = window.localStorage.getItem("currentTheme");
+
+theme_menu.addEventListener("click",function(){
+    document.querySelectorAll(".nav-bar button").forEach(button =>{
+        button.classList.toggle("button-animation");
+    });
+})
+
+light_theme.onclick = function(){
+    theme.setAttribute("href","./themes/default-light-theme.css");
+    window.localStorage.setItem("currentTheme","light-mode");
+}
+dark_theme.onclick = function(){
+    theme.setAttribute("href","./themes/default-dark-theme.css");
+    window.localStorage.setItem("currentTheme","dark-mode");
+}
+purple_light.onclick = function(){
+    theme.setAttribute("href","./themes/purple-light-theme.css");
+    window.localStorage.setItem("currentTheme","purple-light-mode");
+}
+purple_dark.onclick = function(){
+    theme.setAttribute("href","./themes/purple-dark-theme.css");
+    window.localStorage.setItem("currentTheme","purple-dark-mode");
+}
+
+console.log(thememode);
+
+window.onload = function(){
+    if(thememode == "light-mode"){
+        theme.setAttribute("href","./themes/default-light-theme.css");
+    }else if(thememode == "dark-mode"){
+        theme.setAttribute("href","./themes/default-dark-theme.css");
+    }else if(thememode == "purple-light-mode"){
+        theme.setAttribute("href","./themes/purple-light-theme.css");
+    }else if(thememode == "purple-dark-mode"){
+        theme.setAttribute("href","./themes/purple-dark-theme.css");
+    }
+}
 
 // ==================== Pop Up Window Functions ==================== //
 
@@ -46,6 +90,20 @@ function PressEnter(event){
     }
 }
 // ==================== Accept The Input By Press Enter Key ==================== //
+
+
+// ==================== The Label Animation Function ==================== //
+input.onfocus = function() {
+    child_container_label.classList.add("movefromTop-to-Bottom");  
+    input.setAttribute("placeholder",'Press "Esc" To Exit');
+
+}
+input.onblur = function() {
+    child_container_label.classList.remove("movefromTop-to-Bottom");
+    input.setAttribute("placeholder",'Press "I" To Start Typing');
+
+}
+// ==================== The Label Animation Function ==================== //
 
 
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
@@ -91,15 +149,6 @@ addbutton.onclick = function (){
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
 
 
-// ==================== The Label Animation Function ==================== //
-input.onfocus = function() {
-    child_container_label.classList.add("movefromTop-to-Bottom");  
-}
-input.onblur = function() {
-    child_container_label.classList.remove("movefromTop-to-Bottom");
-}
-// ==================== The Label Animation Function ==================== //
-
 // ==================== Function To set the Pointer Events none When User click on the check box ==================== //
 
 list_parent.addEventListener("click",function(event){
@@ -116,23 +165,15 @@ list_parent.addEventListener("click",function(event){
 
 
 // ==================== Function To Switch Between Light and Dark Theme ==================== //
-let darkmode = window.localStorage.getItem("darkmode"); // To save the theme after you refresh or close the Tab of the browser
-const theme = document.getElementsByTagName("link")[0];
 
 dark_theme_button.onclick = function(){
     if(theme.getAttribute("href") == "./themes/default-light-theme.css"){
         theme.setAttribute("href","./themes/default-dark-theme.css");
-        window.localStorage.setItem("darkmode","active");
+        window.localStorage.setItem("currentTheme","dark-mode");
     }else{
-        window.localStorage.setItem("darkmode","notactive");
         theme.setAttribute("href","./themes/default-light-theme.css");    
+        window.localStorage.setItem("currentTheme","light-mode");
     }
-}
-
-if(darkmode == "active"){
-    theme.setAttribute("href","./themes/default-dark-theme.css");
-}else{
-    theme.setAttribute("href","./themes/default-light-theme.css");    
 }
 
 // ==================== Function To Switch Between Light and Dark Theme ==================== //

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo | App</title>
-    <link rel="stylesheet" type="text/css" href="./themes/purple-light-theme.css">
+    <link rel="stylesheet" type="text/css" href="./themes/default-light-theme.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
 <body>
     <div class="main-container"> <!-- Container that contain all elements -->
 
+        
         <!-- Filter that contains the popup-window elements -->
         <div class="filter">
             <div class="popup-window">
@@ -27,17 +28,22 @@
                 <button id="close-window-button">Understood</button>
             </div>  
         </div>
-         
 
-        <div class="themes-header">
-            
-        </div>
+        
         <!-- nav bar that contains the logo and the dark-theme-button -->
-        <div class="nav-bar">
+        <div>
             <h1 class="logo">ToDo List</h1>
             <img id="dark-theme-button" class="moon" src="https://cdn-icons-png.flaticon.com/128/15742/15742989.png" alt="">
         </div>
-
+        
+        <div class="nav-bar">
+            <img id="theme-menu" class="menu" src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png" alt="">            
+            <button id="light-theme"></button>
+            <button id="dark-theme"></button>
+            <button id="purple-dark"></button>
+            <button id="purple-light"></button>
+        </div>
+        
         <!-- Parent Container that used for position the child-container -->
         <div class="parent-container">
             <!-- child-container that used for contians all inputs and the tasks that will be added by the user -->

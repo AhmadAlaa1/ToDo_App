@@ -37,6 +37,75 @@ html{
     flex-direction: column;
   
 }
+/* ======================================================= */
+
+.menu{
+    width: 30%;
+    left: 5rem;
+    top: 4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    filter: invert();
+}
+
+.nav-bar{
+    position: absolute;
+    width: 7%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: start;
+    margin-top: 2rem;
+}
+
+.nav-bar button{
+    width: 12.5rem;
+    height: 12.5rem;
+    border: transparent;
+    outline: transparent;
+    border-radius: 20rem;
+    transform: scale(0.5); 
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    left: -20rem;
+}
+
+.button-animation{
+    left: 0 !important;
+}
+.nav-bar :nth-child(2){
+    background-image: linear-gradient(to left,#FF8225,#B43F3F);
+
+}
+.nav-bar :nth-child(2):hover{
+    filter: drop-shadow(0 0 1rem #B43F3F);
+}
+
+
+.nav-bar :nth-child(3){
+    background-image: linear-gradient(to left, #FF8225, #FF5722);
+}
+.nav-bar :nth-child(3):hover{
+    filter: drop-shadow(0 0 1rem #FF8225);
+}
+
+.nav-bar :nth-child(4){
+    background-image: linear-gradient(to left,#FF007F,#00CFFF);
+}
+.nav-bar :nth-child(4):hover{
+    filter: drop-shadow(0 0 1rem #FF007F);
+}
+
+.nav-bar :nth-child(5){
+    background-image: linear-gradient(to left,#FFB6C1,#B0E57C);
+}
+.nav-bar :nth-child(5):hover{
+    filter: drop-shadow(0 0 1rem #B0E57C);
+}
+
+/* ======================================================= */
 
 .logo{
     font-family: "Pacifico", cursive;
@@ -330,5 +399,21 @@ html{
     }
     ::placeholder{
         color: transparent;
+    }
+    .nav-bar{
+        flex-direction: row;
+        bottom: 0;
+        left: 0;
+        height: 10vh;
+        width: 100%;
+    }
+    .menu{
+        width: 10%;
+        margin-left: 2rem;
+    }
+    .nav-bar button{
+        top: 1rem;
+        left: -40rem;
+        height: 9rem;
     }
 }
