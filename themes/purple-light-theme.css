@@ -225,7 +225,7 @@ html {
 
 .child-container {
     width: 40%;
-    background-color: var(--color-4);
+    background-color: var(--color-2);
     border-top: 0.2rem solid rgba(0, 0, 0, 0.035);
     border-left: 0.2rem solid rgba(0, 0, 0, 0.035);
     border-radius: 2rem;
