@@ -41,7 +41,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 
 ## Themes
 - **Default Light Theme:** A clean and minimal light theme.
-- **SDefault Dark Theme:** A sleek dark theme for low-light environments.
+- **Default Dark Theme:** A sleek dark theme for low-light environments.
 - **Purple Light Theme** A clean and minimal purple light theme.
 - **Purple Dark Theme** A Dark Theme With Cool Purple Colors for text and icons.
 
