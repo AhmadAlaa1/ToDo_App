@@ -33,7 +33,6 @@ document.addEventListener("keydown",function(e){
 
 // ==================== Save Current Theme in The Local Storage  ==================== //
 let thememode = window.localStorage.getItem("currentTheme");
-
 theme_menu.addEventListener("click",function(){
     document.querySelectorAll(".nav-bar button").forEach(button =>{
         button.classList.toggle("button-animation");
@@ -57,19 +56,16 @@ purple_dark.onclick = function(){
     window.localStorage.setItem("currentTheme","purple-dark-mode");
 }
 
-console.log(thememode);
-
-window.onload = function(){
-    if(thememode == "light-mode"){
+if(thememode == "light-mode"){
         theme.setAttribute("href","./themes/default-light-theme.css");
-    }else if(thememode == "dark-mode"){
+}else if(thememode == "dark-mode"){
         theme.setAttribute("href","./themes/default-dark-theme.css");
-    }else if(thememode == "purple-light-mode"){
+}else if(thememode == "purple-light-mode"){
         theme.setAttribute("href","./themes/purple-light-theme.css");
-    }else if(thememode == "purple-dark-mode"){
+}else if(thememode == "purple-dark-mode"){
         theme.setAttribute("href","./themes/purple-dark-theme.css");
-    }
 }
+
 // ==================== Save Current Theme in The Local Storage  ==================== //
 
 
@@ -113,43 +109,69 @@ input.onblur = function() {
 
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
 
+let tasks = window.localStorage.getItem("tasks");
+
+window.onload = function(){
+    if(tasks){
+        list_parent.innerHTML = tasks;
+        setRemoveButtons(); // Set up remove buttons on load
+    }
+}
 
 addbutton.onclick = function (){
-    
     if(!input.value.trim()){
         showpopupWindow();
-    }
-    else{
-        
-        let list_element = document.createElement("li"); // The Parent Element for All Next Elements
-        
-        let checkbox = document.createElement("input"); // Checkbox to assign it with every end of a Task
-        checkbox.type="checkbox";
+    } else {
+        let list_element = document.createElement("li");
+
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
         checkbox.classList.add("checkbox");
 
-        let list_button = document.createElement("button"); // Remove button if You Wanted To remove any Task
+        let list_button = document.createElement("button");
         list_button.className = "remove-button";
         list_button.textContent = "+";
-        
-        
-        let buttons_div_parent=document.createElement("div"); // <div> that contains checkbox and button elements for positioning purpose
+
+        let buttons_div_parent = document.createElement("div");
         buttons_div_parent.appendChild(checkbox);
         buttons_div_parent.appendChild(list_button);
-        buttons_div_parent.style.cssText = "display:flex;"
+        buttons_div_parent.style.cssText = "display:flex;";
 
-        let list_paragraph = document.createElement("p"); // <p> element to contain the input value
+        let list_paragraph = document.createElement("p");
         list_paragraph.textContent = input.value;
-        
+
         list_element.appendChild(list_paragraph);
         list_element.appendChild(buttons_div_parent);
         list_parent.appendChild(list_element);
-        input.value = ""; //To reset the Input Value To Empty
-        
+
+        // Update localStorage
+        updateLocalStorage();
+
+        input.value = ""; // To reset the Input Value To Empty
+
         list_button.onclick = function () { // Remove Task Function
-            list_element.remove(); 
+            list_element.remove();
+            updateLocalStorage();
         };
     }
 };
+
+//Function to Update The LocalStorage
+function updateLocalStorage() {
+    window.localStorage.setItem("tasks", list_parent.innerHTML);
+}
+
+
+// Function to delete the saved tasks in the LocalStorage
+function setRemoveButtons() {
+    let removeButtons = document.querySelectorAll(".remove-button");
+    removeButtons.forEach(button => {
+        button.onclick = function () {
+            button.closest("li").remove();
+            updateLocalStorage();
+        };
+    });
+}
 
 // ==================== Insert The Task in The Container Function When Click the Add Button ==================== //
 
