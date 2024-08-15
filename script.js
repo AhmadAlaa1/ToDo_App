@@ -33,6 +33,7 @@ document.addEventListener("keydown",function(e){
 
 
 // ==================== Save Current Theme in The Local Storage  ==================== //
+
 let thememode = window.localStorage.getItem("currentTheme");
 theme_menu.addEventListener("click",function(){
     document.querySelectorAll(".nav-bar button").forEach(button =>{
@@ -40,32 +41,35 @@ theme_menu.addEventListener("click",function(){
     });
 })
 
+// =================================
 night_theme.onclick = function(){
     theme.setAttribute("href","./themes/night-dark-theme.css");
     window.localStorage.setItem("currentTheme","night-mode");
 }
+// =================================
 green_theme.onclick = function(){
     theme.setAttribute("href","./themes/green-light-theme.css");
     window.localStorage.setItem("currentTheme","green-mode");
 }
+// =================================
 purple_light.onclick = function(){
     theme.setAttribute("href","./themes/purple-light-theme.css");
     window.localStorage.setItem("currentTheme","purple-light-mode");
 }
+// =================================
 purple_dark.onclick = function(){
     theme.setAttribute("href","./themes/purple-dark-theme.css");
     window.localStorage.setItem("currentTheme","purple-dark-mode");
 }
+// =================================
 
-if(thememode == "night-mode"){
-        theme.setAttribute("href","./themes/night-dark-theme.css");
-}else if(thememode == "green-mode"){
-        theme.setAttribute("href","./themes/green-light-theme.css");
-}else if(thememode == "purple-light-mode"){
-        theme.setAttribute("href","./themes/purple-light-theme.css");
-}else if(thememode == "purple-dark-mode"){
-        theme.setAttribute("href","./themes/purple-dark-theme.css");
-}
+// If statment to change the theme to the localStorage value
+thememode == "night-mode" ? theme.setAttribute("href","./themes/night-dark-theme.css") : "" ;
+thememode == "green-mode" ? theme.setAttribute("href","./themes/green-light-theme.css"): "" ;
+thememode == "purple-light-mode" ? theme.setAttribute("href","./themes/purple-light-theme.css"): "" ;
+thememode == "purple-dark-mode" ? theme.setAttribute("href","./themes/purple-daek-theme.css"): "" ;
+thememode == "dark-mode" ? theme.setAttribute("href","./themes/default-dark-theme.css"): "" ;
+thememode == "light-mode" ? theme.setAttribute("href","./themes/default-light-theme.css"): "" ;
 
 // ==================== Save Current Theme in The Local Storage  ==================== //
 
