@@ -16,6 +16,7 @@ let purple_dark = document.querySelector("#purple-dark");
 const theme = document.getElementsByTagName("link")[0];
 // ================================================================================
 
+// ==================== InsertKeyShortcut and Exit Functions  ==================== //
 document.addEventListener("keypress",function(e){ // Add Function that make the user insert into the input box directly when press "i" button
     if(e.key == "i" || e.key == "I" ){
         input.focus();
@@ -27,8 +28,10 @@ document.addEventListener("keydown",function(e){
         input.blur();
     }
 })
+// ==================== InsertKeyShortcut and Exit Functions  ==================== //
 
-// ================================================================================
+
+// ==================== Save Current Theme in The Local Storage  ==================== //
 let thememode = window.localStorage.getItem("currentTheme");
 
 theme_menu.addEventListener("click",function(){
@@ -67,6 +70,8 @@ window.onload = function(){
         theme.setAttribute("href","./themes/purple-dark-theme.css");
     }
 }
+// ==================== Save Current Theme in The Local Storage  ==================== //
+
 
 // ==================== Pop Up Window Functions ==================== //
 
