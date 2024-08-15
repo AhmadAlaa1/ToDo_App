@@ -1,5 +1,6 @@
+<div align="center">
 # ToDo List App
-
+</div>
 This is a simple and elegant ToDo List application built with HTML, CSS, and JavaScript. It allows users to add, view, and manage their daily tasks with a clean and intuitive interface.
 ![MainPage](screenshots/main_page.png)
 ## Features
