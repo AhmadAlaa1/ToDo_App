@@ -31,12 +31,13 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 - **Removing Tasks:** Click the "X" button next to a task to remove it from the list.
 
 ## Project Structure
-  ├── index.html                # Main HTML file
-  ├── themes/
-  │   ├── default-light-theme.css  # Light theme CSS
-  │   ├── default-dark-theme.css   # Dark theme CSS
-  ├── script.js                 # JavaScript file (To be implemented)
-  └── README.md                 # Project documentation
+      ```bash
+     ├── index.html                # Main HTML file
+     ├── themes/
+     │   ├── default-light-theme.css  # Light theme CSS
+     │   ├── default-dark-theme.css   # Dark theme CSS
+     ├── script.js                 # JavaScript file (To be implemented)
+     └── README.md                 # Project documentation
 
 ## Themes
 - **Default Light Theme:** A clean and minimal light theme.
