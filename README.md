@@ -11,6 +11,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 - **Theme Customization**: Choose from multiple predefined themes to personalize your app experience.
 - **Responsive Design**: The app is fully responsive and works seamlessly on devices of various sizes.
 - **Task Management**: Mark tasks as completed and remove them when no longer needed.
+- **LocalStorage**: Use JavaScript's LocalStorage to save the current theme. This allows users to persist their theme preferences. An upcoming feature will include saving tasks added by the user using LocalStorage.
 
 ## Installation
 
