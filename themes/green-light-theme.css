@@ -4,12 +4,13 @@
 }
 
 :root {
-    --color-1: #FF007F; 
-    --color-2: #0C0C0C; 
-    --color-3: #00CFFF; 
-    --color-4: #1A1A1A; 
+    --color-1: #FFB6C1; 
+    --color-2: #F0F8FF; 
+    --color-3: #B0E57C; 
+    --color-4: #E6E6FA; 
     --color-5: #FFD700; 
 }
+
 
 ::selection{
     background-color: var(--color-3);
@@ -19,7 +20,6 @@
 
 body{
     background-color: var(--color-2);
-    color: white;
 }
 
 html{
@@ -39,15 +39,6 @@ html{
 }
 /* ======================================================= */
 
-.menu{
-    width: 30%;
-    left: 5rem;
-    top: 4rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    filter: invert();
-}
-
 .nav-bar{
     position: absolute;
     width: 7%;
@@ -58,6 +49,15 @@ html{
     align-self: start;
     margin-top: 2rem;
 }
+
+.menu{
+    width: 30%;
+    left: 5rem;
+    top: 4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 
 .nav-bar button{
     width: 12.5rem;
@@ -81,7 +81,7 @@ html{
 }
 
 .nav-bar :nth-child(2):hover {
-    filter: drop-shadow(0 0 1rem #B43F3F);
+    filter: drop-shadow(0 0 1rem #2A2A72);
 }
 
 .nav-bar :nth-child(3) {
@@ -126,7 +126,8 @@ html{
    right: 10%;
    top: 3rem;
    cursor: pointer;
-   filter: hue-rotate(280deg);
+   filter: hue-rotate(290deg);
+
 }
 /* =============================================================================== */
 /* The ChildContainer-window-css */

@@ -71,33 +71,36 @@ html {
 .button-animation{
     left: 0 !important;
 }
-.nav-bar :nth-child(2){
-    background-image: linear-gradient(to left,#FF8225,#B43F3F);
 
-}
-.nav-bar :nth-child(2):hover{
-    filter: drop-shadow(0 0 1rem #B43F3F);
+.nav-bar :nth-child(2) {
+    background-image: linear-gradient(to left, #2A2A72, #13134A);
 }
 
-.nav-bar :nth-child(3){
-    background-image: linear-gradient(to left, #FF8225, #FF5722);
-}
-.nav-bar :nth-child(3):hover{
-    filter: drop-shadow(0 0 1rem #FF8225);
+.nav-bar :nth-child(2):hover {
+    filter: drop-shadow(0 0 1rem #2A2A72);
 }
 
-.nav-bar :nth-child(4){
-    background-image: linear-gradient(to left,#FF007F,#00CFFF);
+.nav-bar :nth-child(3) {
+    background-image: linear-gradient(to left, #FFB6C1, #B0E57C);
 }
-.nav-bar :nth-child(4):hover{
+
+.nav-bar :nth-child(3):hover {
+    filter: drop-shadow(0 0 1rem #B0E57C);
+}
+
+.nav-bar :nth-child(4) {
+    background-image: linear-gradient(to left, #FF007F, #0055FF);
+}
+
+.nav-bar :nth-child(4):hover {
     filter: drop-shadow(0 0 1rem #FF007F);
 }
-
-.nav-bar :nth-child(5){
-    background-image: linear-gradient(to left,#FFB6C1,#B0E57C);
+.nav-bar :nth-child(5) {
+    background-image: linear-gradient(to left, #FF007F, #b8c0ce);
 }
-.nav-bar :nth-child(5):hover{
-    filter: drop-shadow(0 0 1rem #B0E57C);
+
+.nav-bar :nth-child(5):hover {
+    filter: drop-shadow(0 0 1rem #FF007F);
 }
 
 /* ======================================================= */

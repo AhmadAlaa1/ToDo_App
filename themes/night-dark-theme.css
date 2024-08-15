@@ -1,33 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 :root {
-    --color-1: #FF007F; 
-    --color-2: #0C0C0C; 
-    --color-3: #00CFFF; 
-    --color-4: #1A1A1A; 
-    --color-5: #FFD700; 
+    --color-1: #2A2A72; /* Deep Blue */
+    --color-2: #0C0C24; /* Midnight Blue */
+    --color-3: #9D9DDE; /* Soft Silver */
+    --color-4: #13134A; /* Dark Indigo */
+    --color-5: #EAEAFF; /* Moonlight White */
 }
 
-::selection{
+::selection {
     background-color: var(--color-3);
     color: white;
 }
 
-
-body{
+body {
     background-color: var(--color-2);
-    color: white;
+    color: white; /* Indigo for text */
 }
 
-html{
+html {
     font-size: 62.5%;
 }
+
 /* ========================= */
 
-.main-container{
+.main-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -35,20 +35,21 @@ html{
     justify-content: space-between;
     position: relative;
     flex-direction: column;
-  
 }
+
 /* ======================================================= */
 
-.menu{
+.menu {
     width: 30%;
     left: 5rem;
     top: 4rem;
     margin-top: 2rem;
     cursor: pointer;
     filter: invert();
+    
 }
 
-.nav-bar{
+.nav-bar {
     position: absolute;
     width: 7%;
     height: 90vh;
@@ -59,20 +60,20 @@ html{
     margin-top: 2rem;
 }
 
-.nav-bar button{
+.nav-bar button {
     width: 12.5rem;
     height: 12.5rem;
     border: transparent;
     outline: transparent;
     border-radius: 20rem;
-    transform: scale(0.5); 
+    transform: scale(0.5);
     cursor: pointer;
     transition: all 0.5s ease;
     position: relative;
     left: -20rem;
 }
 
-.button-animation{
+.button-animation {
     left: 0 !important;
 }
 
@@ -81,7 +82,7 @@ html{
 }
 
 .nav-bar :nth-child(2):hover {
-    filter: drop-shadow(0 0 1rem #B43F3F);
+    filter: drop-shadow(0 0 1rem #2A2A72);
 }
 
 .nav-bar :nth-child(3) {
@@ -109,39 +110,41 @@ html{
 
 /* ======================================================= */
 
-.logo{
+.logo {
     font-family: "Pacifico", cursive;
     font-size: 4rem;
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
+    background-image: linear-gradient(to left, var(--color-1), var(--color-3));
     background-clip: text;
     color: transparent;
     margin: 2rem 0;
     user-select: none;
 }
 
-.moon{
-   width: 3rem;
-   height: 3rem;
-   position: absolute;
-   right: 10%;
-   top: 3rem;
-   cursor: pointer;
-   filter: hue-rotate(280deg);
+.moon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 10%;
+    top: 3rem;
+    cursor: pointer;
+    filter: hue-rotate(200deg);
 }
+
 /* =============================================================================== */
 /* The ChildContainer-window-css */
 
-.input-section{
+.input-section {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     align-items: center;
 }
 
-.input-section label{
-    font-family: "Bebas Neue", sans-serif;    font-size: 4rem;
+.input-section label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
     font-size: 2rem;
-    letter-spacing: 0.3rem;   
+    letter-spacing: 0.3rem;
     margin-bottom: 2rem;
     opacity: 1;
     position: relative;
@@ -149,38 +152,38 @@ html{
     transition: top 0.5s ease, left 0.5s ease;
 }
 
-.movefromTop-to-Bottom{
+.movefromTop-to-Bottom {
     top: 0rem !important;
 }
-.movefromBottom-to-Top{
+
+.movefromBottom-to-Top {
     opacity: 1;
     transform: translateY(-7rem);
 }
 
-
-.input-section label span{
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
+.input-section label span {
+    background-image: linear-gradient(to left, var(--color-1), var(--color-3));
     background-clip: text;
     color: transparent;
 }
 
-.todo-input{
-    font-family:Arial, Helvetica, sans-serif;
+.todo-input {
+    font-family: Arial, Helvetica, sans-serif;
     border: transparent;
     outline: transparent;
     padding: 0.5rem 5rem 0.5rem 1rem;
     caret-color: var(--color-1);
-}   
+}
 
-.add-button{
-    font-family: "Bebas Neue", sans-serif; 
+.add-button {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
     border: transparent;
     outline: transparent;
     padding: 0.4rem 1rem;
     margin-left: 1rem;
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
+    background-image: linear-gradient(to left, var(--color-1), var(--color-3));
     background-clip: text;
     color: transparent;
     position: relative;
@@ -188,7 +191,7 @@ html{
     transition: all 0.2s ease;
 }
 
-.add-button::after{
+.add-button::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -202,15 +205,16 @@ html{
     transition: all 0.2s ease;
 }
 
-.add-button:hover::after{
+.add-button:hover::after {
     opacity: 1;
 }
-.add-button:active:after{
-    background-color: #EEEE;
+
+.add-button:active:after {
+    background-color: #FFE4B5;
     transform: scale(0.9);
 }
 
-.parent-container{
+.parent-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -218,7 +222,8 @@ html{
     justify-content: center;
     margin: 5rem 0 57rem 0;
 }
-.child-container{
+
+.child-container {
     width: 40%;
     background-color: var(--color-4);
     border-top: 0.2rem solid rgba(0, 0, 0, 0.035);
@@ -230,40 +235,41 @@ html{
     overflow: hidden;
 }
 
-.child-container ul{
-    /* background-color: red; */
+.child-container ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 2rem;
 }
-.child-container ul li{
+
+.child-container ul li {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
     padding: 0rem 2rem 0.5rem 2rem;
-    
 }
-.child-container ul li p{
+
+.child-container ul li p {
     position: relative;
-    
 }
-.child-container ul li p::before{
+
+.child-container ul li p::before {
     content: "";
     position: absolute;
     width: 0.625rem;
     height: 0.625rem;
     top: 0.5rem;
     left: -1.5rem;
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
+    background-image: linear-gradient(to left, var(--color-1), var(--color-3));
     border-radius: 10rem;
 }
-.remove-button{
+
+.remove-button {
     width: 3rem;
     height: 3rem;
-    font-family: "Bebas Neue", sans-serif; 
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.5rem;
     border: transparent;
     outline: transparent;
@@ -279,24 +285,26 @@ html{
     color: var(--color-3);
 }
 
-.remove-button:hover{
+.remove-button:hover {
     background-color: var(--color-3);
-    color: #e9e9ed;
+    color: #FFE4B5;
 }
 
-.checkbox{
+.checkbox {
     accent-color: var(--color-1);
 }
 
-.checkbox-pointer-none{
+.checkbox-pointer-none {
     pointer-events: none;
 }
+
 /* The ChildContainer-window-css */
 /* =============================================================================== */
 
 /* =============================================================================== */
 /* popup-window-css */
-.filter{
+
+.filter {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.475);
@@ -307,14 +315,12 @@ html{
     z-index: 10;
     display: none;
     transition: all 1s ease;
-
 }
 
-
-.popup-window{
+.popup-window {
     width: 30%;
     height: 40%;
-    background-color: white;
+    background-color: var(--color-4);
     border-radius: 2rem;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.163);
     padding: 5rem;
@@ -322,100 +328,56 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transform: translateY(-100rem);
+    transition: all 1s ease;
+}
+
+.popup-window p {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 1s ease;
-    position: relative;
-    z-index: 11;
-    
+    text-align: center;
+    color: #4B0082; /* Indigo */
 }
 
-/* show-window class to show and hide the popup window by JavaScript Function */
-.show-window{
-    transform: scale(1) !important;
-    opacity: 1 !important;
-    display: flex;
-}
-
-.popup-window button{
-    position: absolute;
-    bottom: 5rem;
-    font-family: "Bebas Neue", sans-serif;  
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+.popup-window button {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
     border: transparent;
     outline: transparent;
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
+    padding: 0.4rem 1rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(to left, var(--color-1), var(--color-3));
     background-clip: text;
     color: transparent;
+    position: relative;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.popup-window button::after{
+.popup-window button::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    top: -0.5rem;
-    left: -2rem;
-    background-color: #EEEE;
+    top: 0;
+    left: -0.1rem;
+    background-color: var(--color-1);
     z-index: -1;
     border-radius: 2rem;
     opacity: 0;
     transition: all 0.2s ease;
-    padding: 0.5rem 2rem;
 }
 
-.popup-window button:hover::after{
+.popup-window button:hover::after {
     opacity: 1;
 }
-.popup-window button:active:after{
-    background-color: #EEEE;
+
+.popup-window button:active:after {
+    background-color: #FFDDC1;
     transform: scale(0.9);
 }
 
-
-.popup-window :nth-child(1){
-    background-image: linear-gradient(to left,var(--color-1),var(--color-3));
-    background-clip: text;
-    color: transparent;
-}
-
-.popup-window :nth-child(2){
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 2rem;
-}
 /* popup-window-css */
-
-@media (max-width:674px) {
-    .input-section label{
-        top:-12rem;
-        width: 25rem;
-    }
-    .child-container{
-        width: 60%;
-    }
-    ::placeholder{
-        color: transparent;
-    }
-    .nav-bar{
-        flex-direction: row;
-        bottom: 0;
-        left: 0;
-        height: 10vh;
-        width: 100%;
-    }
-    .menu{
-        width: 10%;
-        margin-left: 2rem;
-    }
-    .nav-bar button{
-        top: 1rem;
-        left: -40rem;
-        height: 9rem;
-    }
-}
+/* =============================================================================== */

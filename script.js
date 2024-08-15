@@ -9,8 +9,9 @@ let popupWindow = document.querySelector(".popup-window");
 let popupWindow_close_button = document.querySelector("#close-window-button");
 let dark_theme_button = document.querySelector("#dark-theme-button");
 let theme_menu = document.querySelector("#theme-menu");
-let light_theme = document.querySelector("#light-theme");
+let night_theme = document.querySelector("#night-dark-theme");
 let dark_theme = document.querySelector("#dark-theme");
+let green_theme = document.querySelector("#green-light-theme");
 let purple_light = document.querySelector("#purple-light");
 let purple_dark = document.querySelector("#purple-dark");
 const theme = document.getElementsByTagName("link")[0];
@@ -39,13 +40,13 @@ theme_menu.addEventListener("click",function(){
     });
 })
 
-light_theme.onclick = function(){
-    theme.setAttribute("href","./themes/default-light-theme.css");
-    window.localStorage.setItem("currentTheme","light-mode");
+night_theme.onclick = function(){
+    theme.setAttribute("href","./themes/night-dark-theme.css");
+    window.localStorage.setItem("currentTheme","night-mode");
 }
-dark_theme.onclick = function(){
-    theme.setAttribute("href","./themes/default-dark-theme.css");
-    window.localStorage.setItem("currentTheme","dark-mode");
+green_theme.onclick = function(){
+    theme.setAttribute("href","./themes/green-light-theme.css");
+    window.localStorage.setItem("currentTheme","green-mode");
 }
 purple_light.onclick = function(){
     theme.setAttribute("href","./themes/purple-light-theme.css");
@@ -56,10 +57,10 @@ purple_dark.onclick = function(){
     window.localStorage.setItem("currentTheme","purple-dark-mode");
 }
 
-if(thememode == "light-mode"){
-        theme.setAttribute("href","./themes/default-light-theme.css");
-}else if(thememode == "dark-mode"){
-        theme.setAttribute("href","./themes/default-dark-theme.css");
+if(thememode == "night-mode"){
+        theme.setAttribute("href","./themes/night-dark-theme.css");
+}else if(thememode == "green-mode"){
+        theme.setAttribute("href","./themes/green-light-theme.css");
 }else if(thememode == "purple-light-mode"){
         theme.setAttribute("href","./themes/purple-light-theme.css");
 }else if(thememode == "purple-dark-mode"){
