@@ -11,7 +11,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 - **Theme Customization**: Choose from multiple predefined themes to personalize your app experience.
 - **Responsive Design**: The app is fully responsive and works seamlessly on devices of various sizes.
 - **Task Management**: Mark tasks as completed and remove them when no longer needed.
-- **LocalStorage**: Use JavaScript's LocalStorage to save the current theme and The Tasks that added bu the users.
+- **LocalStorage**: Use JavaScript's LocalStorage to save the current theme and The Tasks added by the users.
 
 ## Installation
 
@@ -63,7 +63,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
   
 - **Green Light Theme** A light theme featuring cool green colors and icons, offering a fresh and vibrant look.
   
-  ![MainPage](screenshots/green_dark_theme.png)
+  ![MainPage](screenshots/green_theme.png)
   
 - **Night Dark Theme** A night theme with cool blue tones and a relaxing color environment, perfect for low-light settings.
   
