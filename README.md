@@ -6,7 +6,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 ![MainPage](screenshots/main_page.png)
 ## Repo Sections
 
--![Features](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#features)
+- ## Features
 -![Installation](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#installation)
 -![Usage](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#usage)
 -![Project Structure](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-structure)
