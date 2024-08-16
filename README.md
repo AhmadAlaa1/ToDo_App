@@ -5,22 +5,26 @@
 This is a simple and elegant ToDo List application built with HTML, CSS, and JavaScript. It allows users to add, view, and manage their daily tasks with a clean and intuitive interface.
 ![MainPage](screenshots/main_page.png)
 ## Repo Sections
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#features" target="_blank">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#features" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#installation" target="_blank">
+<br><br>
+<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#installation" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#usage" target="_blank">
+<br><br>
+<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#usage" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#project-strucutre" target="_blank">
+<br><br>
+<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#project-strucutre" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#themes" target="_blank">
+<br><br>
+<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#themes" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
-
+<br><br>
 --![Installation](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#installation)
 -![Installation](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#installation)
 -![Usage](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#usage)
