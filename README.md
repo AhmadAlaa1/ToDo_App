@@ -17,7 +17,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
     <button><b>Usage<b></button>
 </a>
 <br><br>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-strucutre" style="text-decoration:none">
+<a href="[https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-strucutre](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-structure)" style="text-decoration:none">
     <button><b>Project Structure<b></button>
 </a>
 <br><br>
