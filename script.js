@@ -186,8 +186,10 @@ function setRemoveButtons() {
 list_parent.addEventListener("click",function(event){
     if(event.target.classList.contains("checkbox")){
         const checkbox = event.target;
+        let par = checkbox.closest("li").querySelector("p");
         if(checkbox.checked){ //if true add the class that add pointer-events:none to the checkbox element
             checkbox.classList.add("checkbox-pointer-none");
+            par.style.cssText = "text-decoration:line-through;";
         }
         
     }
