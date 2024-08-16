@@ -28,10 +28,11 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 
 ## Usage
 
-- **Adding Tasks:** Enter your task in the input field and click on the "Add" button to add it to the list.
+- **Adding Tasks:** Enter your task in the input field and click on the "Add" button of hit "Enter" button to add it to the list.
 - **Switching Themes:** Use the theme buttons on the navigation bar to switch between the light, dark, and other available themes.
-  
+
   ![MainPage](screenshots/theme_menu.png)
+  
 - **Marking Tasks:** Click on a task to mark it as completed.
 - **Removing Tasks:** Click the "X" button next to a task to remove it from the list.
 
@@ -41,6 +42,10 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
      ├── themes/
      │   ├── default-light-theme.css  # Light theme CSS
      │   ├── default-dark-theme.css   # Dark theme CSS
+     |   ├── green-light-theme.css    # Green Light theme CSS
+     |   ├── night-dark-theme.css     # Night Dark theme CSS
+     |   ├── purple-dark-theme.css    # Purple Dark theme CSS
+     |   ├── purple-Light-theme.css    # Purple Light theme CSS
      ├── script.js                 # JavaScript file (To be implemented)
      └── README.md                 # Project documentation
 
