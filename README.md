@@ -5,23 +5,23 @@
 This is a simple and elegant ToDo List application built with HTML, CSS, and JavaScript. It allows users to add, view, and manage their daily tasks with a clean and intuitive interface.
 ![MainPage](screenshots/main_page.png)
 ## Repo Sections
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#features" style="text-decoration:none">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#features" style="text-decoration:none">
     <button><b>Features<b></button>
 </a>
 <br><br>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#installation" style="text-decoration:none">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#installation" style="text-decoration:none">
     <button><b>Installation<b></button>
 </a>
 <br><br>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#usage" style="text-decoration:none">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#usage" style="text-decoration:none">
     <button><b>Usage<b></button>
 </a>
 <br><br>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#project-strucutre" style="text-decoration:none">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-strucutre" style="text-decoration:none">
     <button><b>Project Structure<b></button>
 </a>
 <br><br>
-<a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#themes" style="text-decoration:none">
+<a href="https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#themes" style="text-decoration:none">
     <button><b>Themes<b></button>
 </a>
 <br><br>
