@@ -18,7 +18,7 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/todo-list-app.git
+   git clone https://github.com/AhmadAlaa1/todo-list-app.git
    cd todo-list-app
 
 2. **Open index.html:**
