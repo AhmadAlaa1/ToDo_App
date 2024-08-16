@@ -4,6 +4,14 @@
 
 This is a simple and elegant ToDo List application built with HTML, CSS, and JavaScript. It allows users to add, view, and manage their daily tasks with a clean and intuitive interface.
 ![MainPage](screenshots/main_page.png)
+## Repo Sections
+
+-![Features](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#features)
+-![Installation](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#installation)
+-![Usage](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#usage)
+-![Project Structure](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#project-structure)
+-![Themes](https://github.com/AhmadAlaa1/ToDo_App/blob/main/README.md#themes)
+
 ## Features
 
 - **Add Tasks**: Easily add new tasks by typing into the input field and clicking the "Add" button.
