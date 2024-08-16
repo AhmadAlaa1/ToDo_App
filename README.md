@@ -10,19 +10,19 @@ This is a simple and elegant ToDo List application built with HTML, CSS, and Jav
 </a>
 <br><br>
 <a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#installation" style="text-decoration:none">
-    <button><b>Features<b></button>
+    <button><b>Installation<b></button>
 </a>
 <br><br>
 <a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#usage" style="text-decoration:none">
-    <button><b>Features<b></button>
+    <button><b>Usage<b></button>
 </a>
 <br><br>
 <a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#project-strucutre" style="text-decoration:none">
-    <button><b>Features<b></button>
+    <button><b>Project Structure<b></button>
 </a>
 <br><br>
 <a href="https://github.com/AhmadAlaa1/ToDo_App/README.md#themes" style="text-decoration:none">
-    <button><b>Features<b></button>
+    <button><b>Themes<b></button>
 </a>
 <br><br>
 
